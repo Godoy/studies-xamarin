@@ -24,12 +24,17 @@ namespace AndroidApp
 			var txtUser = FindViewById<EditText> (Resource.Id.txtUser);
 			var btnSearch = FindViewById<Button> (Resource.Id.btnSearch);
 			var lvwRepositories = FindViewById<ListView> (Resource.Id.lvwRepositories);
+			var lvwFollowers = FindViewById<ListView> (Resource.Id.lvwFollowers);
+
 
 			btnSearch.Click += async (object sender, EventArgs e) => 	{
 				var github = new Github();
-				var repositories = await github.GetAsync(txtUser.Text);
+				var repositories = await github.GetReposAsync(txtUser.Text);
+				var followers = await github.GetFollowersAsync(txtUser.Text);
+
 
 				lvwRepositories.Adapter = new  ArrayAdapter(this, Android.Resource.Layout.SimpleListItemSingleChoice, repositories);
+				lvwFollowers.Adapter = new  ArrayAdapter(this, Android.Resource.Layout.SimpleListItemSingleChoice, followers);
 
 			};
 		}

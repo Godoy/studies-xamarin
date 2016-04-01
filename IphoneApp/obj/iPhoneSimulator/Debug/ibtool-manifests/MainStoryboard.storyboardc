@@ -53,6 +53,51 @@
 				<integer>9</integer>
 			</dict>
 		</array>
+		<key>38</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>38</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>40</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>40</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
+		<key>42</key>
+		<array>
+			<dict>
+				<key>affected-objects</key>
+				<array>
+					<string>42</string>
+				</array>
+				<key>message</key>
+				<string>Prototype table cells must have reuse identifiers</string>
+				<key>type</key>
+				<string>IBUnsupportedConfiguration</string>
+				<key>type-value</key>
+				<integer>9</integer>
+			</dict>
+		</array>
 	</dict>
 </dict>
 </plist>

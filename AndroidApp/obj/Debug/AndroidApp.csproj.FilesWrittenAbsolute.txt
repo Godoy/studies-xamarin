@@ -1,9 +1,4 @@
 /Users/adrianogodoy/Projects/Github/AndroidApp/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
-/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/GithubApi.dll
-/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/GithubApi.dll.mdb
-/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/System.Net.Http.dll
-/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/Newtonsoft.Json.dll
-/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/System.Net.Http.Primitives.dll
 /Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/AndroidApp.dll.mdb
 /Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/AndroidApp.dll
 /Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/AndroidApp.AndroidApp.apk
@@ -20,3 +15,8 @@
 /Users/adrianogodoy/Projects/Github/AndroidApp/obj/Debug/uploadflags.txt
 /Users/adrianogodoy/Projects/Github/AndroidApp/obj/Debug/AndroidApp.dll
 /Users/adrianogodoy/Projects/Github/AndroidApp/obj/Debug/AndroidApp.dll.mdb
+/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/GithubApi.dll
+/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/GithubApi.dll.mdb
+/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/System.Net.Http.dll
+/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/Newtonsoft.Json.dll
+/Users/adrianogodoy/Projects/Github/AndroidApp/bin/Debug/System.Net.Http.Primitives.dll

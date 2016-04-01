@@ -30,10 +30,16 @@ namespace IphoneApp
 			
 			btnSearch.TouchUpInside	+= async (object sender, EventArgs e) => {
 				var github = new GithubApi.Github();
-				var repositories = await github.GetAsync(txtUser.Text);
+				var repositories = await github.GetReposAsync(txtUser.Text);
+				var followers = await github.GetFollowersAsync(txtUser.Text);
 
 				lvwRepositories.Source = new TableViewSource(repositories);
 				lvwRepositories.ReloadData();
+				reposLabel.Text = "Repositories (" + repositories.Count.ToString() + ")";
+
+				lvwFollowers.Source = new TableViewSource(followers);
+				lvwFollowers.ReloadData();
+				followersLabel.Text = "Followers (" + followers.Count.ToString() + ")";
 
 			};
 		}

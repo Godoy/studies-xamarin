@@ -20,7 +20,19 @@ namespace IphoneApp
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel followersLabel { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITableView lvwFollowers { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
 		UITableView lvwRepositories { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UILabel reposLabel { get; set; }
 
 		[Outlet]
 		[GeneratedCode ("iOS Designer", "1.0")]
@@ -32,9 +44,21 @@ namespace IphoneApp
 				btnSearch.Dispose ();
 				btnSearch = null;
 			}
+			if (followersLabel != null) {
+				followersLabel.Dispose ();
+				followersLabel = null;
+			}
+			if (lvwFollowers != null) {
+				lvwFollowers.Dispose ();
+				lvwFollowers = null;
+			}
 			if (lvwRepositories != null) {
 				lvwRepositories.Dispose ();
 				lvwRepositories = null;
+			}
+			if (reposLabel != null) {
+				reposLabel.Dispose ();
+				reposLabel = null;
 			}
 			if (txtUser != null) {
 				txtUser.Dispose ();
