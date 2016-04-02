@@ -18,12 +18,17 @@ namespace GithubApi
 			var response = await client.GetAsync (urlApi);
 			var content = await response.Content.ReadAsStringAsync ();
 
-			var json = JArray.Parse (content);
-
 			var repositories = new List<string> ();
-			foreach (var item in json) {
-				var repository = item.Value<string> ("name");
-				repositories.Add (repository);
+
+			try {
+				var json = JArray.Parse (content);
+				
+				foreach (var item in json) {
+					var repository = item.Value<string> ("name");
+					repositories.Add (repository);
+				}
+			} catch {
+				
 			}
 
 			return repositories;
@@ -39,12 +44,16 @@ namespace GithubApi
 			var response = await client.GetAsync (urlApi);
 			var content = await response.Content.ReadAsStringAsync ();
 
-			var json = JArray.Parse (content);
-
 			var followers = new List<string> ();
-			foreach (var item in json) {
-				var follower = item.Value<string> ("login");
-				followers.Add (follower);
+
+			try {
+				var json = JArray.Parse (content);
+
+				foreach (var item in json) {
+					var follower = item.Value<string> ("login");
+					followers.Add (follower);
+				}
+			} catch {
 			}
 
 			return followers;
